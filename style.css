@@ -140,6 +140,9 @@ h3{
         height: 80vh;
         padding: 10px 0px;
     }
+    .pass{
+        width: 15%;
+    }
     .btn-wrapper{
         width: 100%;
     }
