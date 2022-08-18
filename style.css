@@ -53,6 +53,7 @@ button:hover {
     background-color: rgba(208, 243, 231, 0.678);
 }
 h3{
+    margin: auto;
     font-size: 20px;
     color: rgb(22, 22, 22);
 }
