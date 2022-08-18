@@ -135,6 +135,11 @@ h3{
         height: 80vh;
         padding: 10px 0px;
     }
+    .password{
+        width: 90%;
+        height: 80vh;
+        padding: 10px 0px;
+    }
     .btn-wrapper{
         width: 100%;
     }
