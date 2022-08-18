@@ -58,24 +58,24 @@ const count = document.getElementById('count');
         }); 
 
         //Version 0.1.0
-        save.addEventListener('click', () => {
-            array.push(countValue);
-            console.log("Using Push() ==>")
-            console.log(array)
-            previous.innerHTML += countValue + ' - ';
-            countValue = 0;
-            count.textContent = countValue;
-        });
+        // save.addEventListener('click', () => {
+        //     array.push(countValue);
+        //     console.log("Using Push() ==>")
+        //     console.log(array)
+        //     previous.innerHTML += countValue + ' - ';
+        //     countValue = 0;
+        //     count.textContent = countValue;
+        // });
 
         //Version 0.2.0
-        // save.addEventListener('click', () => {
-        //     //create a new array and push the countValue to it
-        //     arrFor.push(countValue);
-        //     //create a condition to display single digit numbers with a 0 in front of it of countValue is less than 10
-        //     previous.innerHTML += `<li class="list">${countValue < 10 ? "0" : ""}${countValue} - ${new Date().toLocaleString()}</li>`;
-        //     countValue = 0;
-        //     count.innerHTML = countValue;
-        // });
+        save.addEventListener('click', () => {
+            //create a new array and push the countValue to it
+            arrFor.push(countValue);
+            //create a condition to display single digit numbers with a 0 in front of it of countValue is less than 10
+            previous.innerHTML += `<li class="list">${countValue < 10 ? "0" : ""}${countValue} - ${new Date().toLocaleString()}</li>`;
+            countValue = 0;
+            count.innerHTML = countValue;
+        });
         
 const password = document.getElementById('password');
 
