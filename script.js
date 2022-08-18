@@ -110,7 +110,7 @@ const count = document.getElementById('count');
             countValue = 0;
             count.innerHTML = countValue;
         });
-        
-const password = document.getElementById('password');
+
 
        
+
