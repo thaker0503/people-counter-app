@@ -12,11 +12,52 @@ var pass3 = document.getElementById("pass3");
 var pass4 = document.getElementById("pass4");
 var pass5 = document.getElementById("pass5");
 var pass6 = document.getElementById("pass6");
+var finalPassword = "";
+
+pass1.addEventListener("input", function() {
+    if (pass1.value.length > 0) {
+        pass2.focus();
+    }
+} );
+
+pass2.addEventListener("input", function() {
+    if (pass2.value.length > 0) {
+        pass3.focus();
+    }
+} );
+
+pass3.addEventListener("input", function() {
+    if (pass3.value.length > 0) {
+        pass4.focus();
+    }
+} );
+
+pass4.addEventListener("input", function() {
+    if (pass4.value.length > 0) {
+        pass5.focus();
+    }
+} );
+
+pass5.addEventListener("input", function() {
+    if (pass5.value.length > 0) {
+        pass6.focus();
+    }
+} );
+
+pass6.addEventListener("input", function() {
+    if (pass6.value.length > 0) {
+        finalPassword = pass1.value + pass2.value + pass3.value + pass4.value + pass5.value + pass6.value;
+        console.log("finalPassword: " + finalPassword);
+        console.log("finalPassword.length: " + finalPassword.length);
+        if(finalPassword.length === 6) {
+            passwordCheck();
+        }
+    }
+} );
 
 function passwordCheck() {
-    var final_password = pass1.value + pass2.value + pass3.value + pass4.value + pass5.value + pass6.value;
     
-    if (checkPassword(final_password) === true) {
+    if (checkPassword(finalPassword) === true) {
         document.getElementById("a2").style.display = "flex";
         document.getElementById("a1").style.display = "none";
     } 
